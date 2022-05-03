@@ -5,7 +5,7 @@ export default function index() {
  return (
   <Box component="span" sx={{border: '5px dashed red', display: 'flex'}}>
       <Typography variant="h1" component="h1">
-        Hello World
+        Testing
       </Typography>
     </Box>
  );
