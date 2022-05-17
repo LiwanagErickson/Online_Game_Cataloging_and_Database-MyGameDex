@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Button, Box, Typography, AppBar, Toolbar, IconButton} from '@mui/material/';
+import {Button, Box, Typography, AppBar, Toolbar, IconButton, Grid} from '@mui/material/';
 import Menu from '@mui/material/Menu';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
@@ -18,6 +18,9 @@ export default function index() {
     setAnchorElUser(event.currentTarget);
   };
 
+  const UnhideAdminDashboard = () => {
+    console.log("test");
+  }
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
@@ -41,9 +44,14 @@ export default function index() {
   const gotoAdminDashboard = ()=>{
     router.push("/admindashboard")
   }
-
+  UnhideAdminDashboard;
  return (
-  <><AppBar position="static">
+  <><Grid
+  container
+  direction="row"
+  justifyContent="flex-start"
+  alignItems="center"
+  ><AppBar position="static">
      <Container maxWidth="xl">
        <Toolbar disableGutters>
          <Typography
@@ -53,7 +61,7 @@ export default function index() {
            href="/"
            sx={{
              mr: 2,
-             display: { xs: 'none', md: 'flex' },
+             display: { xs: 'flex', md: 'flex' },
              fontFamily: 'monospace',
              fontWeight: 700,
              letterSpacing: '.3rem',
@@ -63,7 +71,7 @@ export default function index() {
          >
            myGameDex
          </Typography>
-         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' } }}>
             <Button
                key={'genres'}
                onClick={gotoGenres}
@@ -88,7 +96,7 @@ export default function index() {
             <Button
                key={'admindashboard'}
                onClick={gotoAdminDashboard}
-               sx={{ my: 2, color: 'white', display: 'block' }}
+               sx={{ my: 2, color: 'white', display: 'none' }}
              >
                Admin Dashboard
             </Button>
@@ -129,13 +137,23 @@ export default function index() {
          </Box>
        </Toolbar>
      </Container>
-   </AppBar><Box component="span" sx={{ width: "100vw", height: "40vh", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+   </AppBar>
+   </Grid>
+   <Grid
+      container
+      direction="column"
+      justifyContent="center"
+      alignItems="center"
+    >
+   <Box component="span" sx={{ width: "100vw", height: "40vh", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
        <Typography variant="h1" component="h1">
          Welcome to myGameDex!
        </Typography>
        <Typography variant="h5" component="h5" sx={{ color: "red" }}>
          Online Game Cataloging and Database
        </Typography>
-     </Box></>
+     </Box>
+     </Grid>
+     </>
  );
 };
