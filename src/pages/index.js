@@ -38,12 +38,14 @@ export default function index() {
   const gotoProfile = ()=>{
     router.push("/profile")
   }
+  const gotoAdminDashboard = ()=>{
+    router.push("/admindashboard")
+  }
 
  return (
   <><AppBar position="static">
      <Container maxWidth="xl">
        <Toolbar disableGutters>
-       
          <Typography
            variant="h6"
            noWrap
@@ -60,24 +62,6 @@ export default function index() {
            }}
          >
            myGameDex
-         </Typography>
-         <Typography
-           variant="h5"
-           noWrap
-           component="a"
-           href=""
-           sx={{
-             mr: 2,
-             display: { xs: 'flex', md: 'none' },
-             flexGrow: 1,
-             fontFamily: 'monospace',
-             fontWeight: 700,
-             letterSpacing: '.3rem',
-             color: 'inherit',
-             textDecoration: 'none',
-           }}
-         >
-           LOGO
          </Typography>
          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             <Button
@@ -100,6 +84,13 @@ export default function index() {
                sx={{ my: 2, color: 'white', display: 'block' }}
              >
                About US
+            </Button>
+            <Button
+               key={'admindashboard'}
+               onClick={gotoAdminDashboard}
+               sx={{ my: 2, color: 'white', display: 'block' }}
+             >
+               Admin Dashboard
             </Button>
          </Box>
 
