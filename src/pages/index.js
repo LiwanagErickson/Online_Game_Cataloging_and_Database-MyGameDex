@@ -6,10 +6,13 @@ import Avatar from '@mui/material/Avatar';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { useRouter } from "next/router";
+import Script from 'next/script';
 
-const AccountType = "Admin";
+const AccountType = true;
+
 
 export default function index() {
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const router = useRouter();
@@ -72,36 +75,31 @@ export default function index() {
            myGameDex
          </Typography>
          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' } }}>
-            <Button
-               key={'genres'}
-               onClick={gotoGenres}
-               sx={{ my: 2, color: 'white', display: 'block' }}
-             >
-               Genres
-            </Button>
-            <Button
-               key={'rankings'}
-               onClick={gotoRankings}
-               sx={{ my: 2, color: 'white', display: 'block' }}
-             >
-               Rankings
-            </Button>
-            <Button
-               key={'aboutus'}
-               onClick={gotoAboutUS}
-               sx={{ my: 2, color: 'white', display: 'block' }}
-             >
-               About US
-            </Button>
-            <Button
-               key={'admindashboard'}
-               onClick={gotoAdminDashboard}
-               sx={{ my: 2, color: 'white', display: 'none' }}
-             >
-               Admin Dashboard
-            </Button>
+         <Button
+                   key={'genres'}
+                   onClick={gotoGenres}
+                   sx={{ my: 2, color: 'white', display: 'block' }}
+                 >
+                   Genres
+                 </Button><Button
+                   key={'rankings'}
+                   onClick={gotoRankings}
+                   sx={{ my: 2, color: 'white', display: 'block' }}
+                 >
+                     Rankings
+                   </Button><Button
+                     key={'aboutus'}
+                     onClick={gotoAboutUS}
+                     sx={{ my: 2, color: 'white', display: 'block' }}
+                   >
+                     About US
+                   </Button>
+                   <Button
+                     key={'admindashboard'}
+                     onClick={gotoAdminDashboard}
+                     sx={{ my: 2, color: 'white', display: 'hide' }}
+                   ></Button>
          </Box>
-
          <Box sx={{ flexGrow: 0 }}>
            <Tooltip title="Open settings">
              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
@@ -145,7 +143,7 @@ export default function index() {
       justifyContent="center"
       alignItems="center"
     >
-   <Box component="span" sx={{ width: "100vw", height: "40vh", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+   <Box component="div" sx={{ width: "100vw", height: "40vh", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
        <Typography variant="h1" component="h1">
          Welcome to myGameDex!
        </Typography>
