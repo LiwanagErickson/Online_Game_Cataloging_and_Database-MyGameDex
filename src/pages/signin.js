@@ -61,7 +61,7 @@ export default function SignIn() {
     <Box sx={{width:"100vw", height: "100vh", display: "flex", justifyContent:"center", alignItems:"center", flexDirection:"column"}}>
       <Head>
         <title>
-          Sign in
+          Sign in - myGameDex
         </title>
       </Head>
       <Box>
@@ -70,7 +70,7 @@ export default function SignIn() {
       <Paper elevation={3} sx={{padding:"24px", display:"flex", flexDirection:"column", marginTop:"12px"}}>
         <TextField label="Email Address" type="email" name="email" onChange={handleChange("email")}/>
         <TextField label="Password" name="password" type="password" sx={{marginTop:"12px"}} onChange={handleChange("password")} />
-        <Button variant="contained" sx={{...global.button1, marginTop:"12px"}} onClick={signIn}>
+        <Button variant="contained" color="primary" sx={{...global.button1, marginTop:"12px"}} onClick={signIn}>
           Sign In
           </Button>
           <Box sx={{display:"flex", justifyContent: "center", marginTop:"12px"}}>

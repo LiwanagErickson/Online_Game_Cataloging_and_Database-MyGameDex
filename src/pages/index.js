@@ -1,15 +1,14 @@
 import * as React from 'react';
-import {Button, Box, Typography, AppBar, Toolbar, IconButton, Grid} from '@mui/material/';
-import Menu from '@mui/material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
+import {Button, Box, Typography, AppBar, Toolbar, IconButton, Grid, Menu, Container, Avatar, Tooltip, MenuItem, Divider, SearchIconWrapper, StyledInputBase} from '@mui/material/';
 import { useRouter } from "next/router";
 import Script from 'next/script';
-
+import Image from 'next/image';
+import global from '../styles/global';
+import Head from 'next/head';
+import { alpha, styled } from '@mui/material/styles';
+import InputBase from '@mui/material/InputBase';
+import SearchIcon from '@mui/icons-material/Search';
 const AccountType = true;
-
 
 export default function index() {
 
@@ -48,8 +47,53 @@ export default function index() {
     router.push("/admindashboard")
   }
   UnhideAdminDashboard;
+  const Search = styled('div')(({ theme }) => ({
+    position: 'relative',
+    borderRadius: theme.shape.borderRadius,
+    backgroundColor: alpha(theme.palette.common.white, 0.15),
+    '&:hover': {
+      backgroundColor: alpha(theme.palette.common.white, 0.25),
+    },
+    marginLeft: 0,
+    width: '100%',
+    [theme.breakpoints.up('sm')]: {
+      marginLeft: theme.spacing(1),
+      width: 'auto',
+    },
+  }));
+  
+  const SearchIconWrapper = styled('div')(({ theme }) => ({
+    padding: theme.spacing(0, 2),
+    height: '100%',
+    position: 'absolute',
+    pointerEvents: 'none',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  }));
+  
+  const StyledInputBase = styled(InputBase)(({ theme }) => ({
+    color: 'inherit',
+    '& .MuiInputBase-input': {
+      padding: theme.spacing(1, 1, 1, 0),
+      // vertical padding + font size from searchIcon
+      paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+      transition: theme.transitions.create('width'),
+      width: '100%',
+      [theme.breakpoints.up('sm')]: {
+        width: '12ch',
+        '&:focus': {
+          width: '20ch',
+        },
+      },
+    },
+  }));
  return (
-  <><Grid
+  <Box>
+    <Head>
+      <title>Home - myGameDex</title>
+    </Head>
+  <Grid
   container
   direction="row"
   justifyContent="flex-start"
@@ -100,6 +144,17 @@ export default function index() {
                      sx={{ my: 2, color: 'white', display: 'hide' }}
                    ></Button>
          </Box>
+         <Box>
+         <Search sx={{marginRight: "10px"}}>
+            <SearchIconWrapper>
+              <SearchIcon />
+            </SearchIconWrapper>
+            <StyledInputBase
+              placeholder="Search…"
+              inputProps={{ 'aria-label': 'search' }}
+            />
+          </Search>
+          </Box>
          <Box sx={{ flexGrow: 0 }}>
            <Tooltip title="Open settings">
              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
@@ -123,13 +178,17 @@ export default function index() {
              onClose={handleCloseUserMenu}
            > 
               <MenuItem key={'Profile'} onClick={gotoProfile}>
-                 <Typography textAlign="center">{'Profile'}</Typography>
+              <Image src="/assets/svg/profile.svg" alt="Profile" width="20px" height={15}/>
+                 <Typography sx={{marginLeft: "10px"}} textAlign="center">{'Profile'}</Typography>
               </MenuItem>
               <MenuItem key={'Account Settings'} onClick={gotoSettings}>
-                 <Typography textAlign="center">{'Account Settings'}</Typography>
+                 <Image src="/assets/svg/settings.svg" alt="Settings" width="20px" height={15}/>
+                 <Typography sx={{marginLeft: "10px"}} textAlign="center">{'Account Settings'}</Typography>
               </MenuItem>
+              <Divider/>
               <MenuItem key={'Logout'} onClick={handleCloseUserMenu}>
-                 <Typography textAlign="center">{'Logout'}</Typography>
+                 <Image src="/assets/svg/signout.svg" alt="Sign out" width="20px" height={15}/>
+                 <Typography sx={{marginLeft: "10px"}} textAlign="center">{'Sign out'}</Typography>
               </MenuItem>
            </Menu>
          </Box>
@@ -147,11 +206,11 @@ export default function index() {
        <Typography variant="h1" component="h1">
          Welcome to myGameDex!
        </Typography>
-       <Typography variant="h5" component="h5" sx={{ color: "red" }}>
+       <Typography variant="h5" component="h5" color="secondary">
          Online Game Cataloging and Database
        </Typography>
      </Box>
      </Grid>
-     </>
+     </Box>
  );
 };

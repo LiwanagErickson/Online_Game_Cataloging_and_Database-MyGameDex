@@ -11,13 +11,13 @@ const style = {
 export default function SignIn() {
   const router = useRouter();
   const gotoSignIn = ()=>{
-    router.push("/sign-in")
+    router.push("/signin")
   }
   return (
     <Box sx={{width:"100vw", height: "100vh", display: "flex", justifyContent:"center", alignItems:"center", flexDirection:"column"}}>
       <Head>
         <title>
-          Register
+          Register - myGameDex
         </title>
       </Head>
       <Box>

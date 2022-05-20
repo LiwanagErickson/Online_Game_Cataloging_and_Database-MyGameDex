@@ -2,7 +2,13 @@ import { createTheme } from "@mui/material";
 
 const theme = createTheme ({
   palette: {
-    mode: "dark"
+    mode: "dark",
+    primary: {
+      main: "#6867AC",
+  },
+    secondary:{
+      main: "#A267AC"
+    }
   },
   typography: {
     fontFamily: [
