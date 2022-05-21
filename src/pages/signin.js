@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import global from "../styles/global";
 import Head from "next/dist/shared/lib/head";
+import Image from 'next/image';
 const style = {
   linkStyle:{
     cursor:"pointer",
@@ -68,7 +69,8 @@ export default function SignIn() {
         <Typography variant="h5">Please Sign In</Typography>
       </Box>
       <Paper elevation={3} sx={{padding:"24px", display:"flex", flexDirection:"column", marginTop:"12px"}}>
-        <TextField label="Email Address" type="email" name="email" onChange={handleChange("email")}/>
+        <TextField label="Username" type="text" name="username" onChange={handleChange("username")}/>
+        <TextField label="Email Address" type="email" name="email" sx={{marginTop:"12px"}} onChange={handleChange("email")}/>
         <TextField label="Password" name="password" type="password" sx={{marginTop:"12px"}} onChange={handleChange("password")} />
         <Button variant="contained" color="primary" sx={{...global.button1, marginTop:"12px"}} onClick={signIn}>
           Sign In
