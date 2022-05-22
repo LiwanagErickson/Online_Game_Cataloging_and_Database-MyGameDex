@@ -24,7 +24,8 @@ export default function SignIn() {
         <Typography variant="h5">Create New Account</Typography>
       </Box>
       <Paper elevation={3} sx={{padding:"24px", display:"flex", flexDirection:"column", marginTop:"12px"}}>
-        <TextField label="Email Address" type="email" name="email"/>
+        <TextField label="Username" type="text" name="username"/>
+        <TextField label="Email Address" type="email" name="email" sx={{marginTop:"12px"}}/>
         <TextField label="Password" name="password" type="password" sx={{marginTop:"12px"}}/>
         <TextField label="Confirm Password" name="cpassword" type="password" sx={{marginTop:"12px"}}/>
         <Button variant="contained" sx={{...global.button1,marginTop:"12px"}}>

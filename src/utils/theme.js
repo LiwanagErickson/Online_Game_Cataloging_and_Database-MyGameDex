@@ -14,6 +14,12 @@ const theme = createTheme ({
     fontFamily: [
       "Open Sans"
     ].join(","),
+    h3:{
+      fontStyle: "normal",
+      fontWeight: "normal",
+      fontSize: "18px",
+      lineHeight: "20px"
+    },
     h5:{
       fontStyle: "normal",
       fontWeight: "normal",
