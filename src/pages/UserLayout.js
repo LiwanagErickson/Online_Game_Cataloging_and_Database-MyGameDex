@@ -10,7 +10,6 @@ import SearchIcon from '@mui/icons-material/Search';
 import global from '../styles/global';
 
 const AccountType = true;
-const IsLoggedIn = false;
 
 export default function UserLayout({children}) {
 
@@ -20,11 +19,7 @@ export default function UserLayout({children}) {
 
 
   const handleOpenUserMenu = (event) => {
-    if(IsLoggedIn) {
-      setAnchorElUser(event.currentTarget);
-    } else {
-      router.push("/signin")
-    }
+    setAnchorElUser(event.currentTarget);
   };
 
   const UnhideAdminDashboard = () => {
@@ -45,18 +40,10 @@ export default function UserLayout({children}) {
     router.push("/aboutus")
   }
   const gotoSettings = ()=>{
-    if(IsLoggedIn) {
-      router.push("/settings")
-    } else {
-      router.push("/signin")
-    }
+    router.push("/settings")
   }
   const gotoProfile = ()=>{
-    if(IsLoggedIn) {
-      router.push("/profile")
-    } else {
-      router.push("/signin")
-    }
+    router.push("/profile")
   }
   const gotoAdminDashboard = ()=>{
     router.push("/admindashboard")
@@ -174,7 +161,7 @@ export default function UserLayout({children}) {
          <Box sx={{ flexGrow: 0 }}>
            <Tooltip title="Open settings">
              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-              <Avatar alt="Profile" src="/images/profile/default.jpg" />
+              <Avatar alt="Profile" src="/images/profile/1.jpg" />
              </IconButton>
            </Tooltip>
            <Menu
