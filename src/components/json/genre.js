@@ -1,38 +1,38 @@
 export const GenreData = [
     {
         "name": "Action",
-        "key": "action"
+        "header": "action"
     },
     {
         "name": "Adventure",
-        "key": "adventure"
+        "header": "adventure"
     },
     {
         "name": "Horror",
-        "key": "horror"
+        "header": "horror"
     },
     {
         "name": "Multiplayer",
-        "key": "multiplayer"
+        "header": "multiplayer"
     },
     {
         "name": "Sandbox",
-        "key": "sandbox"
+        "header": "sandbox"
     },
     {
         "name": "Shooter",
-        "key": "shooter"
+        "header": "shooter"
     },
     {
         "name": "Simulation",
-        "key": "simulation"
+        "header": "simulation"
     },
     {
         "name": "Sport",
-        "key": "sport"
+        "header": "sport"
     },
     {
         "name": "Real-time Strategy",
-        "key": "real-time-strategy"
+        "header": "real-time-strategy"
     }
 ]

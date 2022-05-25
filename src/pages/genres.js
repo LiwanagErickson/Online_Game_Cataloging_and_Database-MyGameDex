@@ -8,20 +8,24 @@ import { GenreData } from "../components/json/genre";
 const genre = ['Action', 'Adventure', 'Horror', 'Multiplayer', 'Sandbox', 'Shooter', 'Simulation', 'Sport', 'Real-time Strategy'];
 var num = 0;
 
+function renderButton() {
+  for (num = 0; num < GenreData.length; num++) {
+    <Button key={GenreData[num].header} href={GenreData[num].header}>{GenreData[num].name}</Button>
+  }
+}
+
 export default function ranking() {
  return (
-  //  <Box component="div" sx={{ width: "100vw", height: "60vh", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-  //  {genre.map((genre) => (
-  //                 <Button key={genre} href={genre.toString().toLowerCase()}>{genre}</Button>
-  //             ))}
-  //    </Box>
    <Box component="div" sx={{ width: "100vw", height: "60vh", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-   {GenreData.map((data) => {
-     //<Button key={data.key} href={data.key}>{data.name}</Button>
-     console.log(data.name, data.key, num)
-     num++   
-     })}
+   {genre.map((genre) => (
+                  <Button key={genre} href={genre.toString().toLowerCase()}>{genre}</Button>
+              ))}
      </Box>
+  //  <Box component="div" sx={{ width: "100vw", height: "60vh", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+  //  {
+  //    renderButton()
+  //  }
+  //    </Box>
  );
 }
 
