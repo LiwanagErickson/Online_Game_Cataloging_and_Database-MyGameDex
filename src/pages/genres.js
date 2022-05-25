@@ -10,22 +10,23 @@ var num = 0;
 
 function renderButton() {
   for (num = 0; num < GenreData.length; num++) {
-    <Button key={GenreData[num].header} href={GenreData[num].header}>{GenreData[num].name}</Button>
+    <Button key={genre[num]} href={genre[num]}>{genre[num]}</Button>
+    console.log(genre[num])
   }
 }
 
 export default function ranking() {
  return (
-   <Box component="div" sx={{ width: "100vw", height: "60vh", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-   {genre.map((genre) => (
-                  <Button key={genre} href={genre.toString().toLowerCase()}>{genre}</Button>
-              ))}
-     </Box>
   //  <Box component="div" sx={{ width: "100vw", height: "60vh", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-  //  {
-  //    renderButton()
-  //  }
+  //  {genre.map((genre) => (
+  //                 <Button key={genre} href={genre.toString().toLowerCase()}>{genre}</Button>  
+  //             ))}
   //    </Box>
+   <Box component="div" sx={{ width: "100vw", height: "60vh", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+   {
+     renderButton()
+   }
+     </Box>
  );
 }
 
