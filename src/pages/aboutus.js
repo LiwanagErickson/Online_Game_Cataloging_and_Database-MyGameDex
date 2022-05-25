@@ -2,27 +2,36 @@ import * as React from 'react';
 import ReactDOM from 'react-dom';
 import Button from '@mui/material/Button';
 import UserLayout from '../components/UserLayout';
-import { Box, Typography, Paper } from '@mui/material';
+import { Box, Typography, Paper, Grid } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
+import { spacing } from '@mui/system';
+
 
 export default function aboutus() {
   return (
     <React.Fragment>
     <CssBaseline />
-    <Container maxWidth="sm">
-    <Box sx={{display: "flex", justifyContent:"center" }}>
-      <Paper elevation={3} sx={{padding:"12px", display:"flex", flexDirection:"column", marginTop:"4px"}}>
+    
+    <Box sx={{ my: 4 }}
+        display="flex" 
+        alignItems="center"
+        justifyContent="center"
+      >
+      <Paper elevation={3} sx={{padding:"12px", display:"flex", flexDirection:"column", marginTop:"4px",}}>
        <Typography variant="h5">
           Hi there! We are programmers from BSIT 3C
        </Typography>
       </Paper>
        </Box>
-
+     
+       <Container maxWidth="lg">
+         <Grid container>
+           <Grid item sm>
        <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia
@@ -41,8 +50,10 @@ export default function aboutus() {
         </CardContent>
       </CardActionArea>
     </Card>
-
-    <Card sx={{ maxWidth: 345 }}>
+    </Grid>
+    <Grid item sm>
+    <Card sx={{ maxWidth: 345 }}
+    >
       <CardActionArea>
         <CardMedia
           component="img"
@@ -60,7 +71,8 @@ export default function aboutus() {
         </CardContent>
       </CardActionArea>
     </Card>
-
+    </Grid>
+    <Grid item sm>
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia
@@ -79,6 +91,8 @@ export default function aboutus() {
         </CardContent>
       </CardActionArea>
     </Card>
+    </Grid>
+    </Grid>
     </Container>
   </React.Fragment>
 );
