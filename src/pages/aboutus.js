@@ -36,7 +36,7 @@ export default function aboutus() {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
+          height="300"
           image= "images\profile\mEE.jpg"
           alt="Ian"
         />
@@ -57,7 +57,7 @@ export default function aboutus() {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
+          height="300"
           image= "images\profile\1.jpg"
           alt="Erickson"
         />
@@ -77,7 +77,7 @@ export default function aboutus() {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
+          height="300"
           image= "images\profile\default.jpg"
           alt="Lester"
         />
