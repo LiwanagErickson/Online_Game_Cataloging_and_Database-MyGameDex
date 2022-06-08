@@ -17,15 +17,10 @@ function renderButton() {
 
 export default function ranking() {
  return (
-  //  <Box component="div" sx={{ width: "100vw", height: "60vh", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-  //  {genre.map((genre) => (
-  //                 <Button key={genre} href={genre.toString().toLowerCase()}>{genre}</Button>  
-  //             ))}
-  //    </Box>
    <Box component="div" sx={{ width: "100vw", height: "60vh", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-   {
-     renderButton()
-   }
+   {genre.map((genre) => (
+                  <Button key={genre} href={genre.toString().toLowerCase()}>{genre}</Button>  
+              ))}
      </Box>
  );
 }

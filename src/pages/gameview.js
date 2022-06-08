@@ -1,15 +1,25 @@
-import { Box, Typography, Paper, List, ListItem, Grid } from '@mui/material'
-import React from 'react'
+import { Box, Typography, Paper, List, ListItem, Grid, Input } from '@mui/material'
+import React, { useEffect, useRef, useState } from 'react'
 import global from '../styles/global';
 import { GameData } from "../components/json/GameData";
 import UserLayout from '../components/UserLayout';
-import { BlurLinear } from '@mui/icons-material';
-import { maxHeight, maxWidth } from '@mui/system';
-export default function gameview() {
 
-  var game_id = 3;
+export default function gameview() {
+  var [gameid, setgameid] = useState(0);
+
+useEffect(() => {
+    const str = window.location.href.toString();
+    setgameid(str.substring(str.indexOf('=') + 1));
+    console.log(gameid)
+  }, []);
+
+  
+
+  console.log(global)
   return (
+    
     <>
+
     <Box justify = "center">
                 <Box 
                 component="img"
@@ -23,7 +33,7 @@ export default function gameview() {
                   display: "flex"
               }}
               alt="Game Banner"
-              src={GameData[game_id].banner_url}/>
+              src={GameData.gameData[gameid].banner_url}/>
           <Grid>
           <Box sx={{ display: "flex", justifyContent: "center"}}>
               <Paper elevation={3} sx={{ padding: "12px", display: "flex", flexDirection: "column", marginTop: "4px" }}>
@@ -33,13 +43,13 @@ export default function gameview() {
 
                   <List>
                       <ListItem>
-                          Name: {GameData[game_id].name}
+                          Name: {GameData.gameData[gameid].name}
                       </ListItem>
                       <ListItem>
-                          Genres: {GameData[game_id].genres.toString(" ")}
+                          Genres: {GameData.gameData[gameid].genres.toString(" ")}
                       </ListItem>
                       <ListItem>
-                          Descripton: {GameData[game_id].descripton}
+                          Descripton: {GameData.gameData[gameid].descripton}
                       </ListItem>
                   </List>
               </Paper>
