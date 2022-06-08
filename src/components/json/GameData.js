@@ -33,5 +33,18 @@ export const GameData = [
             "Strategy Game",
             "Fuck You Herald of Ultimateness"
         ]
+    },
+    {
+        "name": "Nier Automata",
+        "id": "3",
+        "developer": "Square Enix",
+        "descripton": "Nier: Automata is a 2017 action role-playing game developed by PlatinumGames and published by Square Enix. It is a sequel to the 2010 video game Nier, itself a spin-off and sequel of the Drakengard series.",
+        "banner_url": "https://media.discordapp.net/attachments/699610396654436412/983768994815295589/nier_banner.png?width=1440&height=270",
+        "poster_url": "https://m.media-amazon.com/images/M/MV5BYzcxMmE2NjItNDc0ZS00NmY3LTk0ZDAtZGJmMDBmMzYyZDczXkEyXkFqcGdeQXVyMzM2MzI5MzU@._V1_.jpg",
+        "genres": [
+            "Action",
+            "Hack and Slash",
+            "RPG"
+        ]
     }
 ]
