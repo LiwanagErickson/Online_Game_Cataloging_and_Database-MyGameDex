@@ -35,8 +35,8 @@ export default function UserLayout({children}) {
     setAnchorElUser(null);
   };
 
-  const gotoRankings = ()=>{
-    router.push("/rankings")
+  const gotoGameList = ()=>{
+    router.push("/gamelist")
   }
   const gotoGenres = ()=>{
     router.push("/genres")
@@ -143,10 +143,10 @@ export default function UserLayout({children}) {
                    Genres
                  </Button><Button
                    key={'rankings'}
-                   onClick={gotoRankings}
+                   onClick={gotoGameList}
                    sx={{ my: 2, color: 'white', display: 'block' }}
                  >
-                     Rankings
+                     Games
                    </Button><Button
                      key={'aboutus'}
                      onClick={gotoAboutUS}

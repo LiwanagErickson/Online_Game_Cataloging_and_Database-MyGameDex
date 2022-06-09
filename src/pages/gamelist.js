@@ -1,16 +1,18 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom';
-import Button from '@mui/material/Button';
+import {Box, Button} from '@mui/material';
+import { GameData } from "../components/json/GameData";
 import UserLayout from '../components/UserLayout';
-import { Typography } from '@mui/material';
 
 export default function gamelist() {
   return (
-    <Typography>
-      
-    </Typography>
+  <Box component="div" sx={{ width: "100vw", height: "60vh", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+   {GameData.gameData.map((gameData) => (
+                  <Button href={'/gameview?id=' + gameData.id}>{gameData.name}</Button>  
+              ))}
+     </Box>
   );
 }
-rankings.getLayout = function getLayout(page){
+gamelist.getLayout = function getLayout(page){
   return <UserLayout>{page}</UserLayout>
 }
