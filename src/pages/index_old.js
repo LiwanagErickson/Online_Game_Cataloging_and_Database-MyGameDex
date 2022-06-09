@@ -11,7 +11,7 @@ export default function index() {
     <React.Fragment>
     <CssBaseline />
     
-    {/*First row */} 
+     
     <Box sx={{ my: 4 }}
         display="flex" 
         alignItems="center"
@@ -37,6 +37,7 @@ export default function index() {
        </Typography>
 
         </Box>
+    {/*First row */}
          <Grid container>
            <Grid item sm>
        <Card sx={{ maxWidth: 250 }}>
@@ -122,7 +123,9 @@ export default function index() {
       </CardActionArea>
     </Card>
     </Grid>
-    </Grid>
+    </Grid> {/*end of 1st row */}
+
+
     {/*Second row */} 
     <Box sx={{ my: 4, ml: 5}}
         display="flex" 

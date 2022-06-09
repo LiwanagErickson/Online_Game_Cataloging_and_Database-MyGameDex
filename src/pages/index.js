@@ -24,10 +24,11 @@ const index = () => {
        </Typography>
       </Paper>
        </Box>
+
        <Container maxWidth="lg">
 
-       <Grid container maxWidth="lg">
-       <Box sx={{ my: 4, ml: 5}}
+       
+       <Box sx={{ my: 4, ml: 1}}
         display="flex" 
         alignItems="left"
         justifyContent="left">
@@ -36,6 +37,7 @@ const index = () => {
        </Typography>
 
       </Box>
+      <Grid container>
       {GameData.gameData.slice(0, 4).map((gameData) => (
         <Grid item sm>
         <Card sx={{ maxWidth: 250 }}>
@@ -60,9 +62,10 @@ const index = () => {
       </Card>
       </Grid>
       ))}
-      </Grid>
-      <Grid container maxWidth="lg">
-       <Box sx={{ my: 4, ml: 5}}
+    </Grid>
+
+      
+       <Box sx={{ my: 4, ml: 1}}
         display="flex" 
         alignItems="left"
         justifyContent="left"
@@ -71,6 +74,8 @@ const index = () => {
           New Games 
        </Typography>
       </Box>
+
+      <Grid container>
       {GameData.gameData.slice(0, 4).reverse().map((gameData) => (
         <Grid item sm>
         <Card sx={{ maxWidth: 250 }}>
@@ -95,7 +100,8 @@ const index = () => {
       </Card>
       </Grid>
       ))}
-      </Grid>
+     </Grid>
+
       </Container>
   </React.Fragment>
 
