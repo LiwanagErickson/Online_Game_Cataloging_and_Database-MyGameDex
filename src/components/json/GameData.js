@@ -106,6 +106,16 @@
                 "FPS"
             ]
         },
-        
+        {
+            "name": "Dota 2",
+            "id": "9",
+            "likes": "0",
+            "developer": "Valve",
+            "descripton": "Dota 2 is a multiplayer online battle arena video game developed and published by Valve.",
+            "banner_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/570/header.jpg?t=1650611880",
+            "genres": [
+                "Multiplayer"
+            ]
+        },
     ]
 }
