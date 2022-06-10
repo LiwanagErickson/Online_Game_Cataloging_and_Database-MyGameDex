@@ -24,60 +24,19 @@ const index = () => {
        </Typography>
       </Paper>
        </Box>
-
-       <Container maxWidth="lg">
-
-       
-       <Box sx={{ my: 4, ml: 1}}
-        display="flex" 
-        alignItems="left"
-        justifyContent="left">
-          <Typography variant="h5">
-          Top Played Games 
-       </Typography>
-
-      </Box>
-      <Grid container>
-      {GameData.gameData.slice(0, 4).map((gameData) => (
-        <Grid item sm>
-        <Card sx={{ maxWidth: 250 }}>
-        <Link href={'/gameview?id=' + gameData.id}>
-        <CardActionArea>
-          <CardMedia
-            component="img"
-            height="200"
-            image= {gameData.banner_url}
-            alt= {gameData.name}
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-            {gameData.name}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-            {gameData.descripton}
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        </Link>
-      </Card>
-      </Grid>
-      ))}
-    </Grid>
-
-      
+    <Container maxWidth="lg">
        <Box sx={{ my: 4, ml: 1}}
         display="flex" 
         alignItems="left"
         justifyContent="left"
       >
         <Typography variant="h5">
-          New Games 
+          Top Games 
        </Typography>
       </Box>
-
-      <Grid container>
-      {GameData.gameData.slice(0, 4).reverse().map((gameData) => (
-        <Grid item sm>
+      <Grid container spacing={3}>
+      {GameData.gameData.slice(0, 4).map((gameData) => (
+        <Grid item sm key={gameData.id}>
         <Card sx={{ maxWidth: 250 }}>
         <Link href={'/gameview?id=' + gameData.id}>
         <CardActionArea>
@@ -100,8 +59,7 @@ const index = () => {
       </Card>
       </Grid>
       ))}
-     </Grid>
-
+      </Grid>
       </Container>
   </React.Fragment>
 

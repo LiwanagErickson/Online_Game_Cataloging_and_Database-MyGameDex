@@ -10,7 +10,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import global from '../styles/global';
 
 const AccountType = true;
-const IsLoggedIn = false;
+const IsLoggedIn = true;
 
 export default function UserLayout({children}) {
 

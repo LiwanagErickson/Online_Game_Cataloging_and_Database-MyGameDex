@@ -12,6 +12,7 @@ export default function gamelist() {
               ))}
      </Box>
   );
+  
 }
 gamelist.getLayout = function getLayout(page){
   return <UserLayout>{page}</UserLayout>
