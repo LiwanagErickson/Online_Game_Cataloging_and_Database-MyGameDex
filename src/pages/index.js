@@ -35,9 +35,9 @@ const index = () => {
        </Typography>
       </Box>
       <Grid container spacing={3}>
-      {GameData.gameData.slice(0, 4).map((gameData) => (
+      {GameData.gameData.slice(0, 12).map((gameData) => (
         <Grid item sm key={gameData.id}>
-        <Card sx={{ maxWidth: 250 }}>
+        <Card sx={{ minWidth: 250 }}>
         <Link href={'/gameview?id=' + gameData.id}>
         <CardActionArea>
           <CardMedia
