@@ -42,7 +42,7 @@
             "id": "3",
             "likes": "0",
             "developer": "PlatinumGames",
-            "descripton": "Nier: Automata is a 2017 action role-playing game developed by PlatinumGames and published by Square Enix. It is a sequel to the 2010 video game Nier, itself a spin-off and sequel of the Drakengard series.",
+            "descripton": "Nier: Automata is a 2017 action role-playing game developed by PlatinumGames and published by Square Enix. It is a sequel to the 2010 video game Nier and sequel of the Drakengard series.",
             "banner_url": "https://media.discordapp.net/attachments/699610396654436412/983768994815295589/nier_banner.png?width=1440&height=270",
             "poster_url": "https://m.media-amazon.com/images/M/MV5BYzcxMmE2NjItNDc0ZS00NmY3LTk0ZDAtZGJmMDBmMzYyZDczXkEyXkFqcGdeQXVyMzM2MzI5MzU@._V1_.jpg",
             "genres": [
@@ -78,7 +78,7 @@
             "id": "6",
             "likes": "0",
             "developer": "Epic Games",
-            "descripton": "Fortnite is a Battle Royale game developed by Epic games that can be played on Nintendo Switch, PlayStation 5, Android, Windows, iOS, Xbox Series X|S, Xbox One, PlayStation 4, and Mac.",
+            "descripton": "Fortnite is a world of many experiences. Drop onto the Island and compete to be the last player — or team — standing. Create an Island of your own with your own rules. Hang out with friends on an Island.",
             "banner_url": "https://www.pngitem.com/pimgs/m/41-412878_fortnite-youtube-banner-fortnite-banner-maker-graphic-design.png",
             "genres": [
                 "Battle Royal Game"
@@ -89,7 +89,7 @@
             "id": "7",
             "likes": "0",
             "developer": "Mojang studios",
-            "descripton": "Minecraft is a sandbox video game developed by Mojang Studios. The game was created by Markus Notch Persson in the Java programming language. Following several early private testing versions.",
+            "descripton": "Minecraft is a sandbox video game developed by Mojang Studios. The game was created by Markus Notch Persson in the Java programming language. Following several early private testing versions, it was first made public in May 2009 ",
             "banner_url": "https://img.redbull.com/images/c_fill,w_1200,h_630,g_auto,f_auto,q_auto/redbullcom/2020/4/28/bjoyslzjb3uxqyg82uz2/minecraft",
             "genres": [
                 "Sandbox"
@@ -100,7 +100,7 @@
             "id": "8",
             "likes": "0",
             "developer": "Valve",
-            "descripton": "Counter-Strike: Global Offensive (CS:GO) is a 2012 multiplayer first-person shooter developed by Valve and Hidden Path Entertainment. It is the fourth game in the Counter-Strike series.",
+            "descripton": "Counter-Strike: Global Offensive (CS:GO) is a 2012 multiplayer first-person shooter developed by Valve and Hidden Path Entertainment. It is the fourth game in the Counter-Strike series and was developed for over two years ",
             "banner_url": "https://images.ctfassets.net/r5o0jpcspr8j/1vMgLJb9Law5wjufzSy3Df/58893d6ed1215253a418d135ceefb3a3/blogbanner_csgo.jpeg?w=1000&q=90&fit=fill",
             "genres": [
                 "FPS"
@@ -111,7 +111,7 @@
             "id": "9",
             "likes": "0",
             "developer": "Valve",
-            "descripton": "Dota 2 is a multiplayer online battle arena video game developed and published by Valve.",
+            "descripton": "Dota 2 is a multiplayer online battle arena (MOBA) video game developed and published by Valve. The game is a sequel to Defense of the Ancients. Dota 2 is played in matches between two teams of five players.",
             "banner_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/570/header.jpg?t=1650611880",
             "genres": [
                 "Multiplayer"
@@ -133,7 +133,7 @@
             "id": "11",
             "likes": "0",
             "developer": "Capcom",
-            "descripton": "Monster Hunter Rise is an action role-playing game developed and published by Capcom for the Nintendo Switch. It is the sixth mainline installment in the Monster Hunter series and was released worldwide in March 2021. A Microsoft Windows version was released in January 2022.",
+            "descripton": "Monster Hunter Rise is an action role-playing game developed and published by Capcom for the Nintendo Switch. It is the sixth mainline installment in the Monster Hunter series and was released worldwide in March 2021.",
             "banner_url": "https://www.monsterhunter.com/wp-content/themes/mha/assets/wallpaper_gift/img/wallpaper_rise_1080_1920.jpg",
             "genres": [
                 "Horror"
