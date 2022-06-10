@@ -17,16 +17,16 @@ export default function profile() {
        </Typography>
         <List>
           <ListItem>
-          Name: {ProfileData[usernum].name}
+          Name: "User Name"
           </ListItem>
           <ListItem>
-          Age:  {ProfileData[usernum].age}
+          Age:  "User Age"
           </ListItem>
           <ListItem>
-          Gender: {ProfileData[usernum].gender}
+          Gender: "User Gender"
           </ListItem>
           <ListItem>
-          Email: {ProfileData[usernum].email}
+          Email: "User Email"
           </ListItem>
         </List>
       </Paper>
