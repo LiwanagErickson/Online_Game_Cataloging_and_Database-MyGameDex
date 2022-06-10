@@ -50,6 +50,62 @@
                 "Hack and Slash",
                 "RPG"
             ]
-        }
+        },
+        {
+            "name": "Valorant",
+            "id": "4",
+            "likes": "0",
+            "developer": "Riot Games",
+            "descripton": "Valorant (stylized as VALORANT) is a free-to-play first-person hero shooter developed and published by Riot Games, for Microsoft Windows. First teased under the codename Project A in October 2019.",
+            "banner_url": "images\profile\Valo.jpg",
+            "genres": [
+                "FPS"
+            ]
+        },
+        {
+            "name": "PUBG",
+            "id": "5",
+            "likes": "0",
+            "developer": "PUBG Studios",
+            "descripton": "PUBG: Battlegrounds (previously known as PlayerUnknown's Battlegrounds, or simply PUBG) is an online multiplayer battle royale game developed and published by PUBG Studios, a subsidiary of Krafton.",
+            "banner_url": "https://mockit.gg/wp-content/uploads/2017/02/PUBG-Banner.png",
+            "genres": [
+                "FPS"
+            ]
+        },
+        {
+            "name": "Fortnite",
+            "id": "6",
+            "likes": "0",
+            "developer": "Epic Games",
+            "descripton": "Fortnite is a Battle Royale game developed by Epic games that can be played on Nintendo Switch, PlayStation 5, Android, Windows, iOS, Xbox Series X|S, Xbox One, PlayStation 4, and Mac.",
+            "banner_url": "https://www.pngitem.com/pimgs/m/41-412878_fortnite-youtube-banner-fortnite-banner-maker-graphic-design.png",
+            "genres": [
+                "Battle Royal Game"
+            ]
+        },
+        {
+            "name": "Minecraft",
+            "id": "7",
+            "likes": "0",
+            "developer": "Mojang studios",
+            "descripton": "Minecraft is a sandbox video game developed by Mojang Studios. The game was created by Markus Notch Persson in the Java programming language. Following several early private testing versions.",
+            "banner_url": "https://img.redbull.com/images/c_fill,w_1200,h_630,g_auto,f_auto,q_auto/redbullcom/2020/4/28/bjoyslzjb3uxqyg82uz2/minecraft",
+            "genres": [
+                "Sandbox"
+            ]
+        },
+        {
+            "name": "CS:GO",
+            "id": "8",
+            "likes": "0",
+            "developer": "Valve",
+            "descripton": "Counter-Strike: Global Offensive (CS:GO) is a 2012 multiplayer first-person shooter developed by Valve and Hidden Path Entertainment. It is the fourth game in the Counter-Strike series.",
+            "banner_url": "https://images.ctfassets.net/r5o0jpcspr8j/1vMgLJb9Law5wjufzSy3Df/58893d6ed1215253a418d135ceefb3a3/blogbanner_csgo.jpeg?w=1000&q=90&fit=fill",
+            "genres": [
+                "FPS"
+            ]
+        },
+        
     ]
 }
